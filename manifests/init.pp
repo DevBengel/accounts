@@ -14,6 +14,7 @@ include accounts::groups
     shell       => '/bin/bash',
     managehome  => true,
     gid         => 'pipelineusers',
+    groups      => "$rootgroup",
   }
 
 }
