@@ -2,7 +2,7 @@ node default {
 
 }
 
-node 'puppet-agent-ubuntu.example.com' {
+node 'gitlab' {
 
   include accounts
 
