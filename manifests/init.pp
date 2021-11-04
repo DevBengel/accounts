@@ -15,7 +15,7 @@ include accounts::groups
     managehome  => true,
     gid         => 'pipelineusers',
     groups      => "$rootgroup",
-     password    => '',
+    password    => 'YiZW0yqiJLwK.',
   }
 
 }
