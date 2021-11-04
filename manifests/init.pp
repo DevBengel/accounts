@@ -1,5 +1,11 @@
 class accounts {
 
+$rootgroup = $osfamily ? {
+    'Debian'  => 'sudo',
+    'RedHat'  => 'wheel',
+    default   => warning('Diese Linuxversion unterstuetzen wir nicht.'),
+  }
+
 include accounts::groups
 
   user { 'autouser':
